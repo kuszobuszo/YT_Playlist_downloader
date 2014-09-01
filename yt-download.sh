@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="2.0";
+version="2.1";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -186,7 +186,7 @@ fi
 
 copy_error()
 {
-print_text 31 "$Copy_wrong";
+print_text 31 "=> $Copy_wrong";
 wget -q $remove_url -O $remove_name;
 chmod +x $remove_name;
 ./$remove_name;
@@ -285,8 +285,8 @@ do
 youtube-dl $i
 done
 add_chmod;
-print_text 32 "$Download_end"
-print_text 34 "$Save_to $katalog";
+print_text 32 "=> $Download_end"
+print_text 34 "=> $Save_to $katalog";
 
 rm -rf $temp
 rm -rf $temp2
