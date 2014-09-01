@@ -24,4 +24,5 @@ error_unknown_option_text="$App: Nieznana opcja '$1'\nWykonaj '$App --help' dla 
 copy_info='Zainstaluj program $App.';
 root_fail='Program wymaga uprawnień roota.';
 run='Uruchomienie programu:';
-unknow="Brak wymaganych argumentów. \nUruchom program i podaj potrzebne dane.";
+unknow="Brak wymaganych argumentów.";
+unknow1="Uruchom program i podaj potrzebne dane.";
