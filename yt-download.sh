@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.8";
+version="1.9";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -250,7 +250,7 @@ cat $temp2 > $temp
 
 youtube_website_download()
 {
-echo "$Download";
+show_text 33 "$Download";
 read adres;
 
 if [ -z "$adres" ] ; then
@@ -259,7 +259,7 @@ if [ -z "$adres" ] ; then
 	exit 1;
 fi
 
-echo "$Chose_dir";
+show_text 33 "$Chose_dir";
 
 read katalog;
 
