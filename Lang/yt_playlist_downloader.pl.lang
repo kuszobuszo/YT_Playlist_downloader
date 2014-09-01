@@ -8,7 +8,7 @@ Download="Podaj adres playlisty do ściągnięcia:";
 Chose_dir="Podaj nazwę katalogu w którym ma zostać zapisana playlista:"
 Convert="Przekonwertować pobraną playliste na format mp3? [T/n]";
 Check_version="Sprawdzanie wersji $App...";
-Download_new="Pobieranie nowszej wersji programu $App...'=";
+Download_new="Pobieranie nowszej wersji programu $App...";
 No_connect="Brak połączenia z Internetem. \nPrzerwano.";
 Copy_wrong="Kopiowanie plików nie powiodło się...";
 Answer_remove="Czy na pewno chcesz skasować aplikację $App ze swojego komputera? [T/n]";
