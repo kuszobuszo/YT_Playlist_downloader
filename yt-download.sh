@@ -25,7 +25,7 @@ version_name=".version";
 update_name="update.sh";
 remove_name="remove.sh";
 lang_pl_name="yt-download.pl.lang";
-lang_en_name="yt-download.pl.lang";
+lang_en_name="yt-download.en.lang";
 
 langpl()
 {
