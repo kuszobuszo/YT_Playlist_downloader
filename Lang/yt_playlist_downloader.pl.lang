@@ -26,3 +26,6 @@ root_fail='Program wymaga uprawnień roota.';
 run='Uruchomienie programu:';
 unknow="Brak wymaganych argumentów.";
 unknow1="Uruchom program i podaj potrzebne dane.";
+author='Autor programu:'
+name_author1='Damian Majchrzak (DamiaX).'
+name_author="\E[33;1m$author\033[0m $name_author1"
