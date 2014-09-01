@@ -103,7 +103,6 @@ check_security()
 {
 if [ "$(id -u)" != "0" ]; then
 show_text 31 "$root_fail" 1>&2
-rm -rf $temp_dir;
 exit;
 fi
 }
@@ -112,6 +111,8 @@ add_chmod()
 {
 chmod 777 *.mp4;
 chmod 777 $mp3_dir;
+chmod 777 $mp3_dir/*.mp3;
+
 }
 
 update()
