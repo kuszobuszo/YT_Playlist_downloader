@@ -112,7 +112,6 @@ add_chmod()
 chmod 777 *.mp4;
 chmod 777 $mp3_dir;
 chmod 777 $mp3_dir/*.mp3;
-
 }
 
 update()
@@ -208,7 +207,7 @@ install_file()
 {
 if [ "$1" = "1" ]
 then
-if [ ! -e $programs_dir/$name ] ; then
+if [ ! -e $app_dir/$name ] ; then
 show_text 31 "=> $Copy_file";
 read answer;
 default_answer;
