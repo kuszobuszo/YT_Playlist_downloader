@@ -7,3 +7,5 @@ Save_to="Playlista została zapisana do katalogu:"
 Download="Podaj adres playlisty do ściągnięcia:"
 Chose_dir="Podaj nazwę katalogu w którym ma zostać zapisana playlista:"
 Convert="Przekonwertować pobraną playliste na format mp3? [T/n]";
+Check_version='Sprawdzanie wersji YT-Download...'
+Download_new='Pobieranie nowszej wersji programu YT-Download...'
