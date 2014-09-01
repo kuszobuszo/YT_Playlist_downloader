@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.6";
+version="1.7";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
