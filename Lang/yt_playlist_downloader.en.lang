@@ -26,3 +26,6 @@ root_fail='Root permissions are required.';
 run='Starting the program:';
 unknow="Lack of required arguments.";
 unknow1="Run the program and enter the required data.";
+author='Author program:'
+name_author1='Damian Majchrzak (DamiaX).'
+name_author="\E[33;1m$author\033[0m $name_author1"
