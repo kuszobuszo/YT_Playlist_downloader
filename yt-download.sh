@@ -124,7 +124,6 @@ add_chmod()
 chmod 777 *.mp4;
 chmod 777 $mp3_dir;
 chmod 777 $mp3_dir/*.mp3;
-chmod 777 $katalog;
 }
 
 update()
@@ -395,6 +394,6 @@ youtube_website_download;
 youtube_parser;
 playlist_download;
 data_clear;
-add_chmod;
+chmod 777 $katalog;
 convert_to_mp3;
 exit;
