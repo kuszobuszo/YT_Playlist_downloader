@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.5";
+version="1.6";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -330,7 +330,6 @@ rm -rf $tump
 mv "$name.mp3" $mp3_dir/"$name.mp3"
 add_chmod;
 done
-
 else
 exit 0;
 fi
@@ -348,21 +347,23 @@ echo "-c, --copy: $copy_info";
 echo "-a, --author: $author_info";
 exit;;
 "--version"|"-v")
-echo -e "$App"
+echo -e "\E[1;1m$App $version\033[0m";
 echo "$version_info $version";
 exit;;
 "--update"|"-u")
+echo -e "\E[1;1m$App $version\033[0m";
 check_security;
 test_connect;
-echo -e "$app_name_styl"
 update;
 exit;;
 "--remove"|"-r")
+echo -e "\E[1;1m$App $version\033[0m";
 check_security;
 test_connect;
 remove_app;
 exit;;
 "--copy"|"-c")
+echo -e "\E[1;1m$App $version\033[0m";
 check_security;
 test_connect;
 rm -rf "$app_dir/$name*";
@@ -394,5 +395,6 @@ youtube_website_download;
 youtube_parser;
 playlist_download;
 data_clear;
+add_chmod;
 convert_to_mp3;
 exit;
