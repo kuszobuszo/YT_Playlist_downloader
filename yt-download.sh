@@ -238,8 +238,20 @@ youtube_website_download()
 {
 echo "$Download";
 read adres;
+
+if [ -z "$adres" ] ; then
+	echo "$unknow";
+	exit 1;
+fi
+
 echo "$Chose_dir";
+
 read katalog;
+
+if [ -z "$katalog" ] ; then
+	echo "$unknow";
+	exit 1
+fi
 
 if [ ! -e "$katalog" ] ; then
 mkdir -p "$katalog";
