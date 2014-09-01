@@ -241,6 +241,7 @@ read adres;
 
 if [ -z "$adres" ] ; then
 	echo "$unknow";
+	echo "$unknow1";
 	exit 1;
 fi
 
@@ -250,7 +251,8 @@ read katalog;
 
 if [ -z "$katalog" ] ; then
 	echo "$unknow";
-	exit 1
+	echo "$unknow1";
+	exit 1;
 fi
 
 if [ ! -e "$katalog" ] ; then
