@@ -1,5 +1,5 @@
 #!/bin/bash
-version="1.2";
+version="1.3";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -17,7 +17,7 @@ update_url="https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/mast
 lang_pl_url="https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/master/Lang/yt_playlist_downloader.pl.lang";
 lang_en_url="https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/master/Lang/yt_playlist_downloader.en.lang";
 version_url="https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/master/VERSION";
-remove_url="https://raw.githubusercontent.com/DamiaX/KernelUP/master/Core/remove.sh";
+remove_url="https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/master/Core/remove.sh";
 connect_test_url1='google.com';
 connect_test_url2='facebook.com';
 connect_test_url3='kernel.org';
