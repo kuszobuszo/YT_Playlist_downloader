@@ -367,7 +367,7 @@ esac
 done
 
 clear;
-echo -e "\E[1;1m$App\033[0m"
+echo -e "\E[1;1m$App $version\033[0m";
 check_security;
 test_connect;
 update;
