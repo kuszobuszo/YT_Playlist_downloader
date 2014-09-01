@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.7";
+version="1.8";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -78,16 +78,6 @@ source $lang_en_name;
 fi;;
 esac
 
-check_app()
-{
-if [ ! -e $programs_dir/$youtube_name ] ; then
-echo "$Require $youtube_name."
-echo "$To_Install $youtube_name $Chose"
-echo "sudo apt-get install $youtube_name"
-exit 127;
-fi
-}
-
 print_text()
 {
 for TXT in $( echo $2 | tr -s '[ ]' '[@]' | sed -e 's@[a-x A-X 0-9]@ &@g' )
@@ -102,6 +92,16 @@ show_text()
 {
 echo -e -n "\E[$1;1m$2\033[0m"
 echo ""
+}
+
+check_app()
+{
+if [ ! -e $programs_dir/$youtube_name ] ; then
+show_text 31 "$Require $youtube_name."
+show_text 31 "$To_Install $youtube_name $Chose"
+show_text 31 "sudo apt-get install $youtube_name"
+exit 127;
+fi
 }
 
 default_answer()
@@ -254,8 +254,8 @@ echo "$Download";
 read adres;
 
 if [ -z "$adres" ] ; then
-	echo "$unknow";
-	echo "$unknow1";
+	show_text 31 "$unknow";
+	show_text 31 "$unknow1";
 	exit 1;
 fi
 
@@ -264,8 +264,8 @@ echo "$Chose_dir";
 read katalog;
 
 if [ -z "$katalog" ] ; then
-	echo "$unknow";
-	echo "$unknow1";
+	show_text 31 "$unknow";
+	show_text 31 "$unknow1";
 	exit 1;
 fi
 
@@ -285,8 +285,8 @@ do
 youtube-dl $i
 done
 add_chmod;
-echo "$Download_end"
-echo "$Save_to $katalog";
+print_text 32 "$Download_end"
+print_text 34 "$Save_to $katalog";
 
 rm -rf $temp
 rm -rf $temp2
@@ -304,16 +304,16 @@ default_answer;
 if [[ $answer == "T" || $answer == "t" || $answer == "y" || $answer == "Y" ]]; then
 
 if [ ! -e $programs_dir/$lame_name ] ; then
-echo "$Require $lame_name."
-echo "$To_Install $lame_name $Chose"
-echo "sudo apt-get install $lame_name"
+show_text 31 "$Require $lame_name."
+show_text 31 "$To_Install $lame_name $Chose"
+show_text 31 "sudo apt-get install $lame_name"
 exit 127;
 fi
 
 if [ ! -e $programs_dir/$mplayer_name ] ; then
-echo "$Require $mplayer_name."
-echo "$To_Install $mplayer_name $Chose"
-echo "sudo apt-get install $mplayer_name"
+show_text 31 "$Require $mplayer_name."
+show_text 31 "$To_Install $mplayer_name $Chose"
+show_text 31 "sudo apt-get install $mplayer_name"
 exit 127;
 fi
 
