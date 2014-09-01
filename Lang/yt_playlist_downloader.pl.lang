@@ -9,3 +9,4 @@ Chose_dir="Podaj nazwę katalogu w którym ma zostać zapisana playlista:"
 Convert="Przekonwertować pobraną playliste na format mp3? [T/n]";
 Check_version='Sprawdzanie wersji YT-Download...'
 Download_new='Pobieranie nowszej wersji programu YT-Download...'
+No_connect="Brak połączenia z Internetem. \nPrzerwano."
