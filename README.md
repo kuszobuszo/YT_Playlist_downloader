@@ -27,14 +27,14 @@ Step 1: Download (Method 2/2: Use <code>curl</code> to download a install script
 <pre><code>curl https://raw.githubusercontent.com/DamiaX/YT_Playlist_downloader/master/yt-download.sh > yt-download;
 chmod +x yt-download</code></pre>
 
-Step 2: Run as root the <code>kernelup</code> script.
+Step 2: Run as root the <code>yt-download</code> script.
 <pre><code>sudo ./yt-download</code></pre>
 </blockquote>
 <hr>
 Uninstall YT-Download:<br>
 <blockquote>
 Method 1: Manually uninstalling the program files.<br>
-<code>sudo rm -rf /usr/local/bin/kernelup*</code> removing the application<br>
+<code>sudo rm -rf /usr/local/bin/yt-download*</code> removing the application<br>
       
 Method 2: Starting automatic uninstaller<br>
 <code>sudo yt-download -r</code><br>
