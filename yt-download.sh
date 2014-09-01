@@ -199,7 +199,7 @@ check_success_copy;
 if [ $? -eq 0 ]
 then
 print_text 33 "=> $Copy_ok";
-echo -e "\E[37;1m=> $run\033[0m" "\E[35;1m$App\033[0m";
+echo -e "\E[37;1m=> $run\033[0m" "\E[35;1m$name\033[0m";
 fi
 }
 
