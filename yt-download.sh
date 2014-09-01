@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.4";
+version="1.5";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -30,6 +30,14 @@ update_name="update.sh";
 remove_name="remove.sh";
 lang_pl_name="yt-download.pl.lang";
 lang_en_name="yt-download.en.lang";
+
+data_clear()
+{
+rm -rf $temp;
+rm -rf $temp2;
+rm -rf $temp3;
+rm -rf $tump;
+}
 
 langpl()
 {
@@ -237,6 +245,8 @@ sed -i 's/\n//g' $temp2
 grep "<program2>" $temp2 >$temp
 sed -i '/^[ \t]*$/ d' $temp
 sed -i 's@<program2>@http://www.youtube.com/watch?v=@g' $temp
+sort -u $temp >$temp2
+cat $temp2 > $temp
 }
 
 youtube_website_download()
@@ -383,5 +393,6 @@ install_file 1;
 youtube_website_download;
 youtube_parser;
 playlist_download;
+data_clear;
 convert_to_mp3;
 exit;
