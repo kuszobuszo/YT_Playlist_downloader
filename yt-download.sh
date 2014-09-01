@@ -3,7 +3,7 @@
 #Copyright © 2014 Damian Majchrzak (DamiaX)
 #http://damiax.github.io/YT_Playlist_downloader/
 
-version="1.9";
+version="2.0";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
@@ -211,7 +211,7 @@ check_success_copy;
 if [ $? -eq 0 ]
 then
 print_text 33 "=> $Copy_ok";
-echo -e "\E[37;1m=> $run\033[0m" "\E[35;1m$name\033[0m";
+echo -e "\E[37;1m=> $run\033[0m" "\E[35;1msudo $name\033[0m";
 fi
 }
 
