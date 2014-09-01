@@ -116,6 +116,7 @@ add_chmod()
 chmod 777 *.mp4;
 chmod 777 $mp3_dir;
 chmod 777 $mp3_dir/*.mp3;
+chmod 777 $katalog;
 }
 
 update()
