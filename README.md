@@ -6,8 +6,8 @@ Features:<br>
 <blockquote>
 * Automatic updates YT-Download.<br>
 * The translations (Polish and English).<br>
-* Converter from mp4 to mp3.
-* Downloading Youtube playlist.
+* Converter from mp4 to mp3.<br>
+* Downloading Youtube playlist.<br>
 </blockquote>
 <hr>
 GUI Install:<br>
