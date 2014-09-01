@@ -1,5 +1,5 @@
 #!/bin/bash
-version="1.0";
+version="1.1";
 name="yt-download";
 actual_dir="$(pwd)";
 temp=".adres";
