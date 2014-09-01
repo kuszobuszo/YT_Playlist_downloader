@@ -23,3 +23,4 @@ version_info='Wersja programu:';
 error_unknown_option_text="$App: Nieznana opcja '$1'\nWykonaj '$App --help' dla uzyskania informacji.";
 copy_info='Zainstaluj program $App.';
 root_fail='Program wymaga uprawnień roota.';
+run='Uruchomienie programu:';
